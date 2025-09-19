@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>毛三 · 同城老板IP打造 & 短视频代运营</title>
+  <!-- Tailwind（CDN 版，便于直接落地） -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#3a8dde;         /* 主色：浅蓝 */
+      --primary-hover:#2563eb;   /* 悬停：亮蓝 */
+      --bg:#f7fbff;              /* 页背景：很浅的蓝白 */
+      --accent:#f0f7ff;          /* 分区浅蓝底 */
+    }
+    html,body{font-family:"Noto Sans SC",system-ui,-apple-system,Segoe UI,Roboto,Arial,"Microsoft YaHei",sans-serif;background:var(--bg);color:#0f172a;}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.25rem;border-radius:999px;background:var(--primary);color:#fff;font-weight:700;transition:.25s;}
+    .btn:hover{background:var(--primary-hover);transform:translateY(-2px);}
+    .card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 6px 16px rgba(58,141,222,.12);padding:18px;}
+    .hero-grad{background:linear-gradient(160deg,#e6f2ff, #f8fbff);}
+    .chip{display:inline-flex;align-items:center;padding:.35rem .7rem;border-radius:999px;background:#eaf3ff;color:#2563eb;font-size:.85rem;font-weight:700}
+    .divider{height:1px;background:linear-gradient(90deg,transparent,#e4eefc,transparent);}
+    .qr-frame{border:4px solid #cfe6ff;border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(37,99,235,.15)}
+  </style>
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-extrabold text-lg text-slate-800">
+        <span class="inline-block w-7 h-7 rounded-md bg-[conic-gradient(at_30%_30%,#3a8dde,#b5d7ff,#3a8dde)]"></span>
+        毛三 · 同城IP打造
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#services" class="text-slate-600 hover:text-[var(--primary)]">核心服务</a>
+        <a href="#process"  class="text-slate-600 hover:text-[var(--primary)]">合作流程</a>
+        <a href="#why"      class="text-slate-600 hover:text-[var(--primary)]">为何选择我们</a>
+        <a href="#contact"  class="btn">立即咨询</a>
+      </div>
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-slate-200" aria-label="打开菜单">☰</button>
+    </nav>
+    <div id="mMenu" class="md:hidden hidden border-t border-slate-200 bg-white">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2">
+        <a href="#services" class="py-2 text-slate-700">核心服务</a>
+        <a href="#process"  class="py-2 text-slate-700">合作流程</a>
+        <a href="#why"      class="py-2 text-slate-700">为何选择我们</a>
+        <a href="#contact"  class="btn justify-center">立即咨询</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero-grad">
+    <div class="max-w-6xl mx-auto px-4 py-12 md:py-16 text-center">
+      <span class="chip mb-4">本地实体商家 · 短视频代运营</span>
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-slate-900 mt-2">
+        让同城顾客刷到你、记住你、<span class="text-[var(--primary)]">走进你</span>
+      </h1>
+      <p class="max-w-3xl mx-auto text-slate-600 mt-4">
+        专注老板IP打造与短视频代运营：策划 · 拍摄 · 剪辑 · 发布 · 投流 · 直播 · 复盘，一站搞定。
+        我们把「播放量」变成「到店客户」。
+      </p>
+      <div class="mt-7 flex items-center justify-center gap-3">
+        <a href="#contact" class="btn">获取定制方案</a>
+        <a href="tel:13309258541" class="btn !bg-white !text-[var(--primary)] border border-[var(--primary)] hover:!bg-[var(--primary)] hover:!text-white">电话：133-0925-8541</a>
+      </div>
+      <div class="grid grid-cols-3 gap-3 mt-8 max-w-3xl mx-auto">
+        <div class="card"><p class="text-sm text-slate-500">同城定向</p><p class="text-xl font-bold text-slate-800">3–6 公里</p></div>
+        <div class="card"><p class="text-sm text-slate-500">执行体系</p><p class="text-xl font-bold text-slate-800">SOP 标准</p></div>
+        <div class="card"><p class="text-sm text-slate-500">优化逻辑</p><p class="text-xl font-bold text-slate-800">数据驱动</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 核心服务 -->
+  <section id="services" class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 text-center">核心服务</h2>
+      <p class="text-center text-slate-600 mt-2">从定位到转化的全流程解决方案，省心、省力、见实效</p>
+
+      <div class="grid md:grid-cols-3 gap-4 mt-7">
+        <div class="card">
+          <h3 class="font-bold text-lg mb-1">IP定位与形象塑造</h3>
+          <p class="text-slate-600 text-sm">深度访谈，提炼人设原型与价值主张，制定账号方向与内容主线。</p>
+        </div>
+        <div class="card">
+          <h3 class="font-bold text-lg mb-1">短视频内容矩阵</h3>
+          <p class="text-slate-600 text-sm">知识/过程/日常/见证/本地连接五大类型内容，保持垂直与丰富。</p>
+        </div>
+        <div class="card">
+          <h3 class="font-bold text-lg mb-1">专业拍摄与剪辑</h3>
+          <p class="text-slate-600 text-sm">集中拍摄+快节奏剪辑，统一字幕/封面，稳定持续出片。</p>
+        </div>
+        <div class="card">
+          <h3 class="font-bold text-lg mb-1">账号代运营</h3>
+          <p class="text-slate-600 text-sm">发布日程、评论私信维护、直播策划与执行，沉淀长期资产。</p>
+        </div>
+        <div class="card">
+          <h3 class="font-bold text-lg mb-1">精准同城投流</h3>
+          <p class="text-slate-600 text-sm">DOU+与本地信息流，小预算放大优质内容，优先覆盖 3–6 公里潜客。</p>
+        </div>
+        <div class="card">
+          <h3 class="font-bold text-lg mb-1">数据复盘与优化</h3>
+          <p class="text-slate-600 text-sm">完播率/点击/核销/ROI 周月报，持续优化迭代，效果看得见。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider max-w-6xl mx-auto"></div>
+
+  <!-- 合作流程 -->
+  <section id="process" class="py-12 md:py-16 bg-[var(--accent)]">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 text-center">合作流程（SOP）</h2>
+      <p class="text-center text-slate-600 mt-2">每一步清晰透明，确保高效落地，结果可衡量</p>
+
+      <ol class="mt-7 grid md:grid-cols-3 gap-4">
+        <li class="card"><b>1. 沟通调研</b><p class="text-slate-600 text-sm mt-1">明确人设、卖点与目标人群，收集素材。</p></li>
+        <li class="card"><b>2. 方案定制</b><p class="text-slate-600 text-sm mt-1">输出IP定位与脚本计划，完成账号包装。</p></li>
+        <li class="card"><b>3. 集中拍摄</b><p class="text-slate-600 text-sm mt-1">每月 1–2 天完成全月素材，统一规范。</p></li>
+        <li class="card"><b>4. 剪辑发布</b><p class="text-slate-600 text-sm mt-1">日常发布与互动维护，保持账号活跃。</p></li>
+        <li class="card"><b>5. 投流加热</b><p class="text-slate-600 text-sm mt-1">小预算定向加热，同城 3–6 公里曝光。</p></li>
+        <li class="card"><b>6. 数据复盘</b><p class="text-slate-600 text-sm mt-1">周/月复盘，围绕核销与ROI持续优化。</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 我们的优势 -->
+  <section id="why" class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 text-center">为何选择我们</h2>
+      <p class="text-center text-slate-600 mt-2">本地经验 + 专业团队 + 结果导向</p>
+
+      <div class="grid md:grid-cols-3 gap-4 mt-7">
+        <div class="card">
+          <h3 class="font-bold">更懂本地</h3>
+          <p class="text-slate-600 text-sm mt-1">深耕同城场景，语言风格与人群洞察贴近真实消费。</p>
+        </div>
+        <div class="card">
+          <h3 class="font-bold">一站交付</h3>
+          <p class="text-slate-600 text-sm mt-1">策划—拍摄—剪辑—投流—直播—复盘，全链路代管。</p>
+        </div>
+        <div class="card">
+          <h3 class="font-bold">数据说话</h3>
+          <p class="text-slate-600 text-sm mt-1">周月报透明可查，用数据驱动决策与持续优化。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider max-w-6xl mx-auto"></div>
+
+  <!-- 联系我们（已接入清晰二维码 111.png） -->
+  <section id="contact" class="py-12 md:py-16 bg-[var(--accent)]">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">联系我们</h2>
+      <p class="text-slate-600 mt-2 mb-8">获取一对一诊断与定制方案</p>
+
+      <div class="flex flex-col md:flex-row gap-6 justify-center">
+        <a href="tel:13309258541" class="card w-full md:w-1/3">
+          <h3 class="text-xl font-bold">电话咨询</h3>
+          <p class="text-2xl font-extrabold text-[var(--primary)] tracking-wide mt-1">133-0925-8541</p>
+          <p class="text-slate-500 text-sm mt-2">工作日 9:00–21:00</p>
+        </a>
+
+        <div class="card w-full md:w-1/3">
+          <h3 class="text-xl font-bold">微信扫码</h3>
+          <p class="text-slate-500 text-sm mt-1 mb-3">添加毛三，随时沟通</p>
+          <div class="mx-auto w-44 h-44 qr-frame bg-white">
+            <!-- 确保 111.png 与本 HTML 同目录 -->
+            <img src="111.png" alt="微信二维码" class="w-full h-full object-contain">
+          </div>
+          <p class="text-slate-500 text-xs mt-3">若无法识别，请保存图片到相册后在微信识别</p>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <a href="#services" class="btn">了解服务详情</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-white border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-2">
+      <p class="font-semibold">毛三 | 同城IP打造 · 短视频代运营</p>
+      <p class="text-slate-500 text-sm">© 2025 本地实体商家增长服务 · All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn=document.getElementById('menuBtn');
+    const menu=document.getElementById('mMenu');
+    btn?.addEventListener('click',()=>menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
